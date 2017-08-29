@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include head.html %}
+</head>
+
+<body id="page-top">
+
+<!-- Nav -->
+{% include nav.html %}
+  
+<header class="bb-temp-title backy">
+	<div class="container mt-4 mb-3">
+		<div class="row align-items-center">
+			<div class="col-md-7">
+				<h1 class="h1 text-muted strong mt-3">Tutorials</h1>
+				<p>Learn all about Bootstrap 4 with our awesome tutorials!</p>
+			</div>
+			{% include ad2.html %}
+		</div>
+		<!--
+		<div class="row">
+			<div class="col-12">
+				<nav class="breadcrumb">
+					<a class="breadcrumb-item" href="/index.html">Bootstrapbase</a></li>
+					<span class="breadcrumb-item active">Tutorials</span>
+				</nav>
+			</div>
+		</div>
+		-->
+	</div>
+</header>
+
+<div class="container-fluid bg-light-gray pt-5">
+    {{ content }}
+</div>
+
+<!-- Footer -->
+{% include footer.html %}
+{% include javascript.html %}

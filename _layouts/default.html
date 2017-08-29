@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include head.html %}
+</head>
+
+<body id="page-top">
+
+    {% include nav.html %}
+    
+<div class="container-fluid">
+
+	<div class="container">
+		<div class="row pt-5 align-items-center">
+			<div class="col-lg-8 mb-4">
+				<h1 class="h1 mb-4">Welcome to BootstrapBase.com</h1>
+					<p>BootstrapBase is a resource aimed at helping you use Bootstrap 4. Regardless of your skill level or professional vocation, if it's related to Bootstrap 4, we've got content that you'll enjoy.</p>
+					<p>If you're into video courses, please check out <a href="https://www.udemy.com/become-a-bootstrap-expert-build-20-layouts-version-2/" target="_blank">our course on developing 20 layouts with Bootstrap 4</a>.</p>
+				<p>We also offer tutorials and <a href="/template-categories/all/">free Bootstrap 4 layouts</a> so that you can speed up your workflow.</p>
+			</div><!-- col-lg-8 -->
+			<div class="mb-5 d-flex justify-content-center justify-content-lg-end col-lg-4">
+				{% include ad.html %}
+			</div><!-- col-lg-4 -->
+		</div><!-- row -->
+	</div><!-- container -->
+
+</div><!-- fluid container -->
+
+
+
+    {{ content }}
+
+
+{% include javascript.html %}

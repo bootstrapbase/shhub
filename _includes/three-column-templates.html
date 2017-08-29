@@ -1,0 +1,25 @@
+
+	<div class="container">
+		  	<div class="row">
+				{% for post in site.categories.three-column %}
+				<div class="col-lg-4 col-sm-6">
+					<div class="card mb-4 shadow bg-purple-light">
+						<a href="{{ post.source }}" class="post-image-link">
+							{{ post.content }}
+						</a>
+						<div class="card-body">
+							<h3 class="card-title h4">{{ post.title }}</h3>
+							<p class="card-text">{{ post.description }}</p>
+							<a href="{{ post.source }}" class="d-flex justify-content-center btn btn-primary">Preview &amp; Download</a>
+						</div>
+					</div>
+				</div>	  
+				{% endfor %}
+			</div><!-- container -->
+	</div><!-- row new templates -->
+
+	<div class="row">
+		<div class="mx-auto mt-4 mb-4">
+			<a href="/template-categories/all" class="btn btn-secondary btn-lg">See all bootstrap templates</a>
+		</div><!-- see all templates button -->
+	</div><!-- see all templates row -->

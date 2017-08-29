@@ -1,0 +1,32 @@
+---
+layout: tutorialsposts
+---
+<div class="container">              
+  <div class="row">
+    <div class="col-4 bg-primary mh-650">
+      test
+    </div>
+  
+    <div class="col-8">
+      <div class="posts pb-4">
+        {% for post in site.posts %}
+        
+          {% if post.categories contains 'tutorials' %}
+          <article class="post card shadow mb-4">
+            <div class="card-body">
+              <h2 class="card-title h2"><a id="fade-success" class="" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+              
+              <div class="entry card-text pt-2">
+                {{ post.excerpt }}
+              </div>
+              
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more btn btn-primary float-right">Read More</a>
+            </div>
+          </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div><!-- end .col-8 -->
+  
+  </div><!-- end .row -->
+</div>
